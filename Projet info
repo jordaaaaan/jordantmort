@@ -6,4 +6,3 @@ def display_map(m, d):
 mapp=[[0,0,1],[0,1,1],[0,1,0]]
 legende={0:' ',1:'#'}
 display_map(mapp,legende)
-bonjour ali c'est moi
