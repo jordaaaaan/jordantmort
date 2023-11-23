@@ -38,18 +38,23 @@ def update_p(lettre, p,m):
     else:
         print("direction innaccessible utilisez 'z' 'q'  's' ou 'd' .")
 perso={"position":(1,1)}
-direc= input("Choisissez une direction (z, q, s, d) : ")
-update_p(direc, perso)
+m=[[0,0,1],[0,1,1],[0,1,0]]
+dico = {"joueur": "o"}
+
 while True:
-    display_map_and_char(m,p,d)
+    display_map_and_char(m,perso,dico)
     direc= input("Choisissez une direction (z, q, s, d) ou 'a' pour quitter : ")
     if direc.lower()=='a':
         break
     else:
-        update_p(letter,p)
+        update_p(direc,p,m)
     
     
     
+
+
+ 
+
 
 
  
