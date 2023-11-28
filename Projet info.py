@@ -5,7 +5,7 @@ def display_map(m, d):
         print()
 mapp=[[0,0,1],[0,1,1],[0,1,0]]
 legende={0:' ',1:'#'}
-display_map(mapp,legende)
+
 
 
 def create_perso(pos):
@@ -21,13 +21,11 @@ def display_map_and_char(m, d, p):
         for j in i:
             print(d[j], end=' ')
         print()
-mapp = [[0, 0, 1], [0, 1, 1], [0, 1, 0]]
+
 # Le keys error est dû au fait qu'il y ait une confusion dans le dictionnaire de légende. Il est défini comme {0: ' ', 1: '#'}, ce qui signifie que le caractère 'o' n'est pas défini dans la légende.
 # Pour résoudre le problème,on ajoute une entrée pour le caractère 'o' dans le dictionnaire de légende.
-legende = {0:'',1:'#', 'o': 'o'}
-perso = create_perso((1, 2))
-display_map_and_char(mapp, legende, perso)
 
+perso = create_perso((1, 2))
 
 
 # question 2.3 et 2.4
@@ -132,7 +130,7 @@ legende = {0: ' ', 1: '#', 'o': 'o', '.': '.'}
 perso = create_perso((1, 2))
 objects = create_objects(3, mapp)
 
-display_map_char_and_objects(mapp, legende, perso, objects)
+
 
 # 3.5
 def update_objects(p, objects):
