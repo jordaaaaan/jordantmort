@@ -43,15 +43,12 @@ def update_p(letter, p):
     else:
         print("Direction invalide. Utilisez 'z' pour haut, 'q' pour gauche, 's' pour bas, 'd' pour droite.")
 
-mapp = [[0, 0, 1], [0, 1, 1], [0, 1, 0]]
-legende = {0: ' ', 1: '#', 'o': 'o'}
-perso = create_perso((1, 2))
- 
-while True:
-    display_map_and_char(mapp, legende, perso)
-    direction = input("Quel déplacement ? ")
-    update_p(direction, perso)
 
+#while True: 
+   # display_map_and_char(mapp, legende, perso)
+   # direction = input("Quel déplacement ? ")
+   # update_p(direction, perso)
+#nous devons faire appel aux fonctions qu'après avoir finis tout le code car les boucles while sont infinis et donc la suite n'est jamais lu
 
 
 # question 3.1
@@ -71,14 +68,11 @@ def update_p(letter, p, m):
         print("Direction invalide ou sortie de la carte. Utilisez 'z' pour haut, 'q' pour gauche, 's' pour bas, 'd' pour droite.")
 
 # Initialisation des variables
-mapp = [[0, 0, 1], [0, 1, 1], [0, 1, 0]]
-legende = {0: ' ', 1: '#', 'o': 'o'}
-perso = create_perso((1, 2))
 
-while True:
-    display_map_and_char(mapp, legende, perso)
-    direction = input("Quel déplacement ? ")
-    update_p(direction, perso, mapp)
+#while True:
+    #display_map_and_char(mapp, legende, perso)
+  #  direction = input("Quel déplacement ? ")
+  #  update_p(direction, perso, mapp)
 
 
 
@@ -103,14 +97,12 @@ def update_p(letter, p, m):
     else:
         print("Déplacement impossible. Il y a un mur. Utilisez 'z' pour haut, 'q' pour gauche, 's' pour bas, 'd' pour droite.")
 
-mapp = [[0, 0, 1], [0, 1, 1], [0, 1, 0]]
-legende = {0: ' ', 1: '#', 'o': 'o'}
-perso = create_perso((1, 2))
 
-while True:
-    display_map_and_char(mapp, legende, perso)
-    direction = input("Quel déplacement ? ")
-    update_p(direction, perso, mapp)
+
+#while True:
+    #display_map_and_char(mapp, legende, perso)
+   # direction = input("Quel déplacement ? ")
+  #  update_p(direction, perso, mapp)
     
 # 3.4
 import random
