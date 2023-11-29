@@ -179,11 +179,9 @@ while True:
 
 
 
-
-
 # -*- coding: utf-8 -*-
 """
-Created on Wed Nov 29 13:42:13 2023
+Created on Wed Nov 29 23:24:36 2023
 
 @author: reyan
 """
@@ -354,7 +352,6 @@ def display_map_char_and_objects(m, d, p, objects):
         for cell in row:
             print(d[cell], end=' ')
         print()
-
     print(f"Score: {p['score']}")
 
 while True:
@@ -362,6 +359,14 @@ while True:
     direction = input("Quel déplacement ? ")
     update_p(direction, perso, mapp)
     update_objects(perso, objects)
+
+
+
+
+
+
+
+
 
 
 
