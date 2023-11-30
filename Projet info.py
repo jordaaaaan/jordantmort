@@ -25,7 +25,7 @@ def display_map_and_char(m, d, p):
 # Le keys error est dû au fait qu'il y ait une confusion dans le dictionnaire de légende. Il est défini comme {0: ' ', 1: '#'}, ce qui signifie que le caractère 'o' n'est pas défini dans la légende.
 # Pour résoudre le problème,on ajoute une entrée pour le caractère 'o' dans le dictionnaire de légende.
 
-perso = create_perso((1, 2))
+perso = create_perso((0, 2))
 
 
 # question 2.3 et 2.4
