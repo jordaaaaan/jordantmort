@@ -133,24 +133,25 @@ objects = create_objects(3, mapp)
 
 
 # 3.5
-def update_objects(p, objects):
-    if (p["x"], p["y"]) in objects:
-        objects.remove((p["x"], p["y"]))
+#def update_objects(p, objects):
+#    if (p["x"], p["y"]) in objects:
+#        objects.remove((p["x"], p["y"]))
 
-while True:
-    display_map_char_and_objects(mapp, legende, perso, objects)
-    direction = input("Quel déplacement ? ")
-    update_p(direction, perso, mapp)
-    update_objects(perso, objects)
+#while True:
+#    display_map_char_and_objects(mapp, legende, perso, objects)
+#    direction = input("Quel déplacement ? ")
+#    update_p(direction, perso, mapp)
+#    update_objects(perso, objects)
 
 # 3.6
 def create_perso(pos):
     P = {"char": "o", "x": pos[0], "y": pos[1], "score": 0}
     return P
-
+perso=(create_perso((1,2))
 def update_objects(p, objects):
     if (p["x"], p["y"]) in objects:
         objects.remove((p["x"], p["y"]))
+        p['score']+=1
 
 def display_map_char_and_objects(m, d, p, objects):
     copy_map = [i.copy() for i in m]
