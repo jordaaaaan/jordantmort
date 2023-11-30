@@ -3,7 +3,7 @@ def display_map(m, d):
         for j in i:
             print(d[j], end=' ')
         print()
-mapp=[[0,0,1],[0,1,1],[0,1,0]]
+mapp=[[0,0,1],[0,1,1],[0,0,0],[0,0,1]]
 legende={0:' ',1:'#'}
 
 
@@ -125,7 +125,7 @@ def display_map_char_and_objects(m, d, p, objects):
             print(d[cell], end=' ')
         print()
 
-mapp = [[0, 0, 1], [0, 1, 1], [0, 1, 0]]
+mapp = [[0, 0, 1], [0, 1, 1], [0, 0, 0],[0,0,1]]
 legende = {0: ' ', 1: '#', 'o': 'o', '.': '.'}
 perso = create_perso((0, 2))
 objects = create_objects(3, mapp)
