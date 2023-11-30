@@ -179,12 +179,7 @@ while True:
 
 
 
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Nov 29 23:24:36 2023
 
-@author: reyan
-"""
 
 def display_map(m, d):
     for i in m:
